@@ -19,7 +19,7 @@ namespace EkzamenProg
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -42,5 +42,9 @@ namespace EkzamenProg
             double InterestRate = Convert.ToDouble(Console.ReadLine());
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+        }
     }
 }
