@@ -39,7 +39,8 @@ namespace EkzamenProg
 
         private void InterestRate_TextChanged(object sender, EventArgs e)
         {
-            var InterestRate = new InterRate();
+            double InterestRate = Convert.ToDouble(Console.ReadLine());
         }
+
     }
 }
