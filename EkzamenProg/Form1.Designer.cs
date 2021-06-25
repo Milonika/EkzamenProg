@@ -60,7 +60,7 @@ namespace EkzamenProg
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 97);
+            this.label2.Location = new System.Drawing.Point(45, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 2;
@@ -81,6 +81,7 @@ namespace EkzamenProg
             this.LoanaAmount.Name = "LoanaAmount";
             this.LoanaAmount.Size = new System.Drawing.Size(100, 20);
             this.LoanaAmount.TabIndex = 4;
+            this.LoanaAmount.TextChanged += new System.EventHandler(this.LoanaAmount_TextChanged);
             // 
             // Days
             // 
@@ -88,6 +89,7 @@ namespace EkzamenProg
             this.Days.Name = "Days";
             this.Days.Size = new System.Drawing.Size(100, 20);
             this.Days.TabIndex = 5;
+            this.Days.TextChanged += new System.EventHandler(this.Days_TextChanged);
             // 
             // InterestRate
             // 
@@ -95,6 +97,7 @@ namespace EkzamenProg
             this.InterestRate.Name = "InterestRate";
             this.InterestRate.Size = new System.Drawing.Size(100, 20);
             this.InterestRate.TabIndex = 6;
+            this.InterestRate.TextChanged += new System.EventHandler(this.InterestRate_TextChanged);
             // 
             // Form1
             // 
@@ -110,6 +113,7 @@ namespace EkzamenProg
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

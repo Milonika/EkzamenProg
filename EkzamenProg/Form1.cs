@@ -19,7 +19,27 @@ namespace EkzamenProg
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoanaAmount_TextChanged(object sender, EventArgs e)
+        {
+            int LoanaAmount = int.Parse(Console.ReadLine());
+        }
+
+        private void Days_TextChanged(object sender, EventArgs e)
+        {
+            int Days = int.Parse(Console.ReadLine());
+        }
+
+        private void InterestRate_TextChanged(object sender, EventArgs e)
+        {
+            var InterestRate = new InterRate();
         }
     }
 }
